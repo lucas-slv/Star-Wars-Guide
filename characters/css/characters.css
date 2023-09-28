@@ -1,0 +1,389 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.cdnfonts.com/css/redfive');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+body {
+    background-image: url('../bg-characters/image-fund3.jpg');
+    background-size: contain;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.main-title {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-family: 'RedFive', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.linha {
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.title::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.page-content-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.description {
+    height: 35rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.txt-description {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'RedFive', sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #000000;
+    color: #FFD700;
+    position: absolute;
+    animation:  textAnimation 10s linear;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.txt-description::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.txt-description > em {
+    color: #fff;
+    text-shadow: none;
+}
+
+.txt-description > em::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+.warning-load-api {
+    width: 25%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.title-warning {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: .5px;
+}
+
+.warning {
+    color: #fff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.warning em {
+    color: #FFD700;
+}
+
+br {
+    visibility: hidden;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.cards {
+    width: 230px;
+    height: 420px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .7s ease;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.03);
+}
+
+#loading-message {
+    visibility: hidden;
+    width: 100%;
+}
+
+h1.loading{
+    text-align: center;
+    font-size: 1.2rem; 
+    font-weight: bold;
+    font-family: "Roboto", sans-serif; 
+    color: #FFD700;
+    letter-spacing: 1px;
+}
+
+span[class^= dot-]{
+    opacity: 0;
+}
+
+.dot-1 {
+    animation: dot1 2s linear infinite;
+}
+
+.dot-2 {
+    animation: dot2 2s linear infinite;
+}
+
+.dot-3 {
+    animation: dot3 2s linear infinite;
+}
+
+@keyframes dot1 {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot2 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot3 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.character-name-bg {
+    width: 100%;
+    height: 8%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.character-name {
+    font-family: 'RedFive', sans-serif;
+    color: #FFD700;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: center;
+}
+
+.character-name::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.btns {
+    width: 75%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btns button {
+    background: none;
+    padding: 5px 10px;
+    color: #FFD700;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .7s ease;
+}
+
+.btns button:hover {
+    transform: scale(1.03);
+}
+
+.btns button span {
+    color: #FFD700;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.btns .voltar:hover::after {
+    content: 'Anterior';
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+.btns .proximo:hover::before {
+    content: 'Próximo';
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+#back-btn {
+    visibility: hidden;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+
+.modal.active {
+    visibility: visible;
+}
+
+.modal-content {
+    width: 25vw;
+    height: 75vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 25px;
+    padding: 40px 10px;
+    align-items: center;
+}
+
+.character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform .5s ease, filter .5s ease;
+    filter: grayscale(100%);
+}
+
+.character-image:hover {
+    transform: scale(1.03);
+    filter: grayscale(0);
+}
+
+.character-details {
+    font-family: 'RedFive', sans-serif;
+    font-size: 1rem;
+    color: #ffd900c5;
+    text-align: center;
+}
+
+.character-details::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.close-modal-mobile{
+    font-size: 1.5rem;
+    background-color: rgba(255, 0, 0, 0.349);
+    color: #fff;
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    top: 12%;
+}
+
+.modal.active > .close-modal-mobile {
+    visibility: hidden;
+}
+
+.modal > .close-modal-mobile {
+    visibility: hidden;
+}

@@ -1,0 +1,323 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.cdnfonts.com/css/redfive');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+body {
+    background-image: url('../bg-planets/imge-fund.jpg');
+    background-size: contain;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-title {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'RedFive', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.linha {
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.title::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.page-content-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.description {
+    width: 50%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.txt-description {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'RedFive', sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(238, 255, 1, 0.7);
+    color: #FFD700;
+    position: absolute;
+    animation: txtAnimation 10s linear;
+}
+
+.txt-description::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+br {
+    visibility: hidden;
+}
+
+@keyframes txtAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.warning-load-api {
+    width: 25%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.title-warning {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.warning {
+    color: #fff;
+    font-size: 1rem;
+    font-style: oblique;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: .7px;
+}
+
+.warning em {
+    color: #FFD700;
+}
+
+.swiper {
+    width: 90%;
+    height: 40rem;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 40px !important;
+}
+
+.slide-content {
+    row-gap: 20px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.swiper-slide {
+    height: calc((100% - 60px) / 2) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.card {
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-content {
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+}
+
+.planet-name-bg {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(10, 10, 10, 0.5);
+}
+
+.planet-name {
+    font-family: 'Star Wars', sans-serif;
+    color: #FFD700;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: center;
+}
+#next,
+#prev {
+    color: #ffd900b9 ;
+    transition: all .4s ease;
+}
+
+#next:hover,
+#prev:hover {
+    color: #FFD700;
+    transform: scale(1.03);
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 3.2rem !important;
+}
+
+.swiper-button-next {
+    right: 0% !important;
+}
+
+.swiper-button-prev {
+    left: 0% !important;
+}
+
+.swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    opacity: 1 !important;
+    background-color: #ffd9008f !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFD700 !important;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.modal.active {
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #000000;
+    height: 75vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+    row-gap: 20px;
+    padding: 20px 10px;
+}
+
+
+.planet-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform .5s ease, filter .5s ease;
+    filter: grayscale(100%);
+}
+
+.planet-image:hover {
+    transform: scale(1.03);
+    filter: grayscale(0);
+}
+.planets-details {
+    color: #ffd900c5;
+    font-family: 'RedFive', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+    width: 95%;
+    line-height: 20px;
+}
+
+.planets-details::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.close-modal-mobile{
+    font-size: 1.5rem;
+    background-color: rgba(255, 0, 0, 0.349);
+    color: #fff;
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    top: 12%;
+}
+
+.modal.active > .close-modal-mobile {
+    visibility: hidden;
+}
+
+.modal > .close-modal-mobile {
+    visibility: hidden;
+}
+
+#loading {
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-top: 5px solid #FFD700;
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+    visibility: hidden;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

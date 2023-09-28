@@ -1,0 +1,311 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.cdnfonts.com/css/redfive');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+body {
+    background-image: url('../bg-home/fundo-starwars.jpg');
+    background-size: contain;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.main-title, 
+.secondary-title {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'RedFive', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.title::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.linha {
+    width: 90%;
+    background-color: #fff ;
+    height: 1px;
+}
+
+.page-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.movie-info {
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-description {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'RedFive', sans-serif;
+    font-weight: 600;
+    color: #FFD700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px #000000;
+    position: absolute;
+    bottom: 0;
+    animation: creditsAnimation 40s linear infinite;
+}
+
+br {
+    visibility: hidden;
+}
+
+.movie-description::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.trilogia-films {
+    color: #fff;
+}
+
+.trilogia-films::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+@keyframes creditsAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-60%);
+    }
+}
+
+.api-info {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.api-description {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-api {
+    font-size: .9rem;
+    color: #FFD700;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-api {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+.btn-api:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.03);
+}
+
+.secondary-title {
+    margin-top: 10px;
+}
+
+.secondary-title .title {
+    font-size: 1.3rem;
+}
+
+.slide-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+}
+
+.slide-content {
+    padding: 30px 20px;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 90%;
+    height: 95%;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #000000;
+}
+
+.image-content,
+.card-content {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-content {
+    position: relative;
+}
+
+
+.card-content {
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.card-image {
+    position: relative;
+    height: 100% ;
+    width: 100%;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #000;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 20px 20px 0 20px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    bottom: -40px;
+    right: 0;
+    border: none;
+}
+
+.overlay::after {
+    border-radius: 0 20px 0 0;
+    background-color: #000000;
+    border: none;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    width: 80%;
+    text-align: center;
+}
+
+.description {
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: 'Poppins';
+    color: #ffd900d7;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 20px;
+    letter-spacing: .5px;
+}
+
+.button {
+    border: none;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FFD700;
+    transform: scale(1.02);
+}
+
+#swiper-navBtn {
+    color: #FFD700 ;
+    transition: color .3s ease;
+    transition: .4s ease;
+}
+
+#swiper-navBtn:hover {
+    color: #ffd900b9;
+    transform: scale(1.05);
+}
+
+#swiper-navBtn::before,
+#swiper-navBtn::after {
+    font-size: 50px !important;
+}
+
+.swiper-button-next {
+    right: 0 !important;
+}
+
+.swiper-button-prev {
+    left: 0 !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #c0a718 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFD700 !important;
+}

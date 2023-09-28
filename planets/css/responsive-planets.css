@@ -1,0 +1,409 @@
+@media screen and (max-width: 1280px) {
+  
+  .page-content-info > .description {
+    width: 55%;
+  }
+
+  .page-content-info > .description .txt-description {
+    line-height: 23px;
+  }
+
+  .page-content-info > .warning-load-api {
+    width: 30%;
+  }
+
+  .modal-content {
+    width: 30vw;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cabecalho > .logo {
+    width: 30%;
+  }
+
+  .cabecalho > .navigation-menu {
+    width: 45%;
+  }
+
+  .linha {
+    width: 95%;
+  }
+
+  .page-content-info {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .page-content-info > .description {
+    width: 65%;
+    height: 37rem;
+  }
+
+  .page-content-info > .warning-load-api {
+    width: 40%;
+  }
+
+  .modal-content {
+    width: 35vw;
+  }
+
+  .planet-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cabecalho > .logo {
+    width: 30%;
+  }
+
+  .cabecalho > .logo .img-logo {
+    width: 130px;
+  }
+
+  .cabecalho > .navigation-menu {
+    width: 70%;
+  }
+
+  .cabecalho > .navigation-menu .menu li a::after {
+    display: none;
+  }
+
+  .cabecalho > .social-media {
+    display: none;
+  }
+
+  .social-media-footer {
+    display: flex;
+  }
+
+  .page-content-info > .description {
+    width: 70%;
+  }
+
+  .page-content-info > .warning-load-api {
+    width: 50%;
+  }
+
+  .swiper {
+    padding: 40px 15px !important;
+  }
+
+  .swiper > .slide-content {
+    row-gap: 0 !important;
+  }
+
+  .swiper > .swiper-navBtn {
+    display: none;
+  }
+
+  .modal-content {
+    width: 50vw;
+    height: 60vh;
+    justify-content: space-evenly;
+  }
+
+  .planet-image {
+    transition: none;
+    filter: grayscale(0);
+    cursor: default;
+  }
+
+  .planet-image:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    height: 150px;
+  }
+
+  .cabecalho > .logo {
+    width: 100%;
+  }
+
+  .cabecalho > .logo .txt-logo {
+    color: #FFD700;
+    text-shadow: 1px 1px 2px #fff;
+    font-size: 1.1rem;
+  }
+
+  .cabecalho > .navigation-menu {
+    width: 100%;
+  }
+
+  .cabecalho > .navigation-menu .menu li {
+    height: 100%;
+  }
+
+  .cabecalho > .navigation-menu .menu li a {
+    font-size: 1.1rem;
+  }
+
+  .page-content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .page-content-info > .description {
+    width: 80%;
+    height: 42rem;
+  }
+
+  .page-content-info > .description .txt-description {
+    letter-spacing: 1px;
+  }
+
+  .page-content-info > .warning-load-api {
+    width: 60%;
+    box-shadow: 0 0 10px rgba(100, 0, 0, 0.5);
+    background-color: rgba(100, 0, 0, 0.150);
+  }
+
+  .warning {
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .swiper {
+    height: 35rem;
+  }
+
+  .swiper > .slide-content .swiper-slide {
+    height: calc((100% - 100px) / 2) !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 13px !important;
+    height: 13px !important;
+  }
+
+  .modal-content {
+    height: 60vh;
+    width: 55vw;
+  }
+
+  .planets-details {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .page-content-info > .description {
+    width: 90%;
+    height: 46rem;
+  }
+
+  .page-content-info > .warning-load-api {
+    width: 75%;
+  }
+
+  .swiper > .slide-content .swiper-slide {
+    height: calc((90% - 100px) / 2) !important;
+  }
+
+  .modal-content {
+    width: 65%;
+  }
+
+  .social-media-footer {
+    width: 50%;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+
+  .cabecalho {
+    height: 250px;
+    justify-content: space-between;
+  }
+
+  .cabecalho > .logo {
+    height: 30%;
+  }
+
+  .cabecalho > .logo .img-logo {
+    width: 130px;
+  }
+
+  .cabecalho > .navigation-menu {
+    height: 60%;
+  }
+
+  .cabecalho > .navigation-menu .menu {
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .cabecalho > .navigation-menu .menu li {
+    width: 100%;
+  }
+
+  .cabecalho > .navigation-menu .menu li a {
+    background-color: #FFD700;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    padding: 5px 8px;
+    color: #000;
+  }
+
+  .main-title {
+    height: 6.5rem;
+  }
+
+  .main-title > .title {
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .page-content-info > .description {
+    width: 100%;
+    height: 57rem;
+  }
+
+  .description > .txt-description {
+    line-height: normal;
+  }
+
+  .page-content-info > .warning-load-api {
+    width: 95%;
+  }
+
+  .swiper > .slide-content .swiper-slide {
+    height: calc((80% - 120px) / 2) !important;
+  }
+
+  .modal.active > .close-modal-mobile {
+    visibility: visible;
+    top: 8%;
+  }
+
+  .modal-content {
+    width: 85vw;
+    height: 85vh;    
+  }
+
+  .social-media-footer {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  
+  .main-title {
+    height: 8rem;
+  }
+
+  .page-content-info > .description {
+    height: 60rem;
+  }
+
+ .page-content-info > .description > .txt-description {
+    letter-spacing: normal;
+    line-height: normal;
+ }
+
+  .page-content-info > .warning-load-api {
+    width: 100%;
+  }
+
+  .swiper {
+    height: 45rem;
+  }
+
+  .swiper > .slide-content .swiper-slide {
+    height: calc((70% - 100px) / 2) !important;
+    width: 100% !important;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .planet-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .planets-details {
+    line-height: normal;
+    font-size: 1rem;
+  }
+
+  .modal.active > .close-modal-mobile {
+    top: 5%;
+  }
+
+  .social-media-footer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 240px) {
+
+  .modal-content {
+    width: 95vw;
+    height: 100vh;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  .planet-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .planets-details {
+    width: 100%;
+    font-size: .9rem;
+  }
+
+  .modal.active > .close-modal-mobile {
+    top: 0%;
+  }
+
+  .social-media-footer {
+    width: 100%;
+  }
+}
