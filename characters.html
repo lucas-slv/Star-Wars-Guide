@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="./assets/images/android-chrome-192x192.png" type="image/x-icon">
+
+        <!-- Icons font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="assets/public/reset.css">
+        <link rel="stylesheet" href="assets/public/header.css">
+        <link rel="stylesheet" href="characters/css/characters.css">
+        <link rel="stylesheet" href="assets/public/footer.css">
+        <link rel="stylesheet" href="characters/css/responsive-characters.css">
+        
+        <title>Star Wars - Characters</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="img-logo" src="./assets/images/logo-starwars.png" alt="logo do starwars">
+                </a>
+                    
+                <span class="txt-logo">Characters</span>                
+            </div>
+            
+            
+            <nav class="navigation-menu">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a title="Planetas" href="planets.html">Planets</a></li>
+                    <li><a title="Naves Espaciais" href="starships.html">Starships</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <ul class="social-list">
+
+                    <li title="Instagram" class="instagram">
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Email" class="email">
+                        <a href="mailto:lucasms.540@gmail.com?subject=Contate-me" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Github" class="github">
+                        <a href="https://github.com/lucas-slv" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Linkedin" class="linkedin">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+        <main class="main-container">
+            <div class="main-title">
+                <h1 class="title">Conheça todos os personagens de Star Wars em um só lugar</h1>
+                <div class="linha"></div>
+            </div>
+
+            <section class="page-content-info">
+                <div class="description">
+                    <p class="txt-description">
+                        O universo de Star Wars é diversificado e repleto de personagens únicos. <em>Humanos</em> desempenham papéis cruciais, com figuras como Luke Skywalker e Darth Vader. <em>Alienígenas</em>, como os wookiees e Yoda, trazem uma variedade fascinante, enquanto <em>dróides</em> como R2-D2 e C-3PO contribuem com humor e utilidade. A rivalidade entre os <em>Jedi</em>, como Obi-Wan Kenobi, e os Sith, como Darth Sidious, é um elemento central. <em>Contrabandistas</em> como Han Solo e <em>caçadores de recompensas</em> como Boba Fett adicionam complexidade moral. <em>Políticos</em>, como Padmé Amidala e o Imperador Palpatine, moldam o destino da galáxia. <em>Criaturas</em>, incluindo os adoráveis Ewoks e o temível Sarlacc, aumentam a diversidade. <em>Rebeldes</em>, tropas imperiais e líderes como Leia e Amidala completam este universo épico. Cada personagem contribui para a rica tapeçaria de Star Wars.
+                    </p>
+                </div>
+
+                <aside class="warning-load-api">
+                    <h4 class="title-warning">Aviso:</h4>
+                    <p class="warning">Os cards dos personagens podem demorar alguns segundos para carregar devido a API utlizada nestá página. Alguns dos motivos são:
+                        <br>
+                        <em>- A performance do servidor que hospeda a API.</em>
+                        <br>
+                        <em>- Também pode depender da latência da rede.</em>
+                        <br>
+                        <em>- A API ter muitas páginas para armazenar todos os dados de informações sobre personagens, planetas, naves espaciais e etc.</em>
+                        <br>
+                        Isso pode afetar o tempo de resposta dos dados esperados da API, causando lentidão ao carregar os cards.
+                    </p>
+                </aside>
+            </section>
+
+            <div class="linha"></div>
+
+            <div class="main-content" id="main-content"></div>
+            <div id="loading-message">
+                <h1 class="loading">
+                    Carregando
+                    <span class="dot-1">.</span>
+                    <span class="dot-2">.</span>
+                    <span class="dot-3">.</span>
+                </h1>
+            </div>
+
+            <div class="modal" id="modal">
+                <i class="close-modal-mobile fa-solid fa-x" id="x-modal-mobile"></i>
+                <div class="modal-content" id="modal-content"></div>
+            </div>
+
+            <div class="btns">
+                <button title="Anterior" class="voltar" id="back-btn" disabled>
+                    <span class="fa-solid fa-chevron-left"></span> 
+                </button>
+                
+                <button title="Próximo" class="proximo" id="next-btn" disabled>
+                    <span class="fa-solid fa-chevron-right"></span>
+                </button>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="social-media-footer">
+                <ul class="social-list">
+
+                    <li title="Instagram" class="instagram">
+                        <a href="https://www.instagram.com/lucas.mds_/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Email" class="email">
+                        <a href="mailto:lucasms.540@gmail.com?subject=Contate-me" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Github" class="github">
+                        <a href="https://github.com/lucas-slv" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Linkedin" class="linkedin">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <p class="footer-logo">Star Wars - Characters</p>
+            <p class="copyright">Desenvolvido por: &copy; Lucas Mendes</p>
+        </footer>
+        
+        <script src="characters/js/characters.js"></script>
+    </body>
+</html>

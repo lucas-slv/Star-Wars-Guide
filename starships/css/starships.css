@@ -1,0 +1,333 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.cdnfonts.com/css/redfive');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+body {
+    background-image: url('../bg-starships/image-fund4.jpg');
+    background-size: contain;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.main-title {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'RedFive', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.title::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.linha {
+    width: 90%;
+    background-color: #fff ;
+    height: 1px;
+}
+
+.page-info-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description {
+    width: 45%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.description .txt {
+    font-size: 1rem;
+    font-family: "RedFive", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #FFD700;
+    letter-spacing: 1px;
+    line-height: 23px;
+    position: absolute;
+    animation: txtAnimation 8s linear;
+}
+
+@keyframes txtAnimation {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.txt::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.txt em {
+    color: #fff;
+}
+
+.txt em::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+.warning-load-api {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    row-gap: 15px;
+    border-radius: 5px;
+}
+
+.title-warning {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #FFD700;
+}
+
+.txt-warning {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .3px;
+    color: #fff;
+}
+
+.txt-warning em {
+    color: #FFD700;
+}
+
+br {
+    visibility: hidden;
+}
+
+.swiper {
+    width: 95%;
+    height: 45rem;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 40px !important;
+}
+
+.slide-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    row-gap: 10px;
+}
+
+.swiper-slide {
+    height: calc((80% - 50px) / 2) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.card {
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-content {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
+
+.starships-name-bg {
+    background-color: rgba(37, 37, 37, 0.5);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.starships-name {
+    color: #FFD700;
+    width: 100%;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'RedFive', sans-serif;
+}
+
+#next,
+#prev {
+    color: #ffd900b9;
+    transition: all .5s ease;
+}
+
+#next:hover,
+#prev:hover {
+    color: #FFD700;
+    transform: scale(1.04);
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 3.5rem !important;
+}
+
+.swiper-button-next {
+    right: 0% !important;
+}
+
+.swiper-button-prev {
+    left: 0% !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ffd900b9 !important;
+    width: 9px !important;
+    height: 9px!important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFD700 !important;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.modal.active {
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #0d0d0d ;
+    height: 75vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+    border-radius: 5px;
+    row-gap: 15px;
+}
+
+.starship-image {
+    width: 250px;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: transform .5s ease, filter .5s ease;
+}
+
+.starship-image:hover {
+    transform: scale(1.03);
+    filter: grayscale(0);
+}
+
+.starships-details {
+    font-size: 1rem;
+    font-family: "RedFive", sans-serif;
+    color: #ffd900c5;
+    text-align: center;
+    font-weight: 100;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.starships-details::selection {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.close-modal-mobile{
+    font-size: 1.5rem;
+    background-color: rgba(255, 0, 0, 0.349);
+    color: #fff;
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    top: 12%;
+}
+
+.modal.active > .close-modal-mobile {
+    visibility: hidden;
+}
+
+.modal > .close-modal-mobile {
+    visibility: hidden;
+}
+
+#loading {
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-top: 5px solid #FFD700;
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+    visibility: hidden;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

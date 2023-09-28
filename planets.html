@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/images/android-chrome-192x192.png" type="image/x-icon">
+
+        <!-- Icons font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="assets/public/reset.css">
+        <link rel="stylesheet" href="assets/public/header.css">
+        <link rel="stylesheet" href="planets/css/planets.css">
+        <link rel="stylesheet" href="planets/css/plantets-cards_images.css">
+        <link rel="stylesheet" href="assets/public/footer.css">
+        <link rel="stylesheet" href="planets/css/responsive-planets.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="swiper-css/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css">
+
+        <title>Star Wars - Planets</title>
+    </head>
+    <body>
+        
+        <header class="cabecalho">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo-starwars.png" alt="logo star wars" class="img-logo">
+                </a>
+               
+                <span class="txt-logo">Planets</span>
+            </div>
+
+            <nav class="navigation-menu">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a title="Personagens" href="characters.html">Characters</a></li>
+                    <li><a title="Naves Espaciais" href="starships.html">Starships</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <ul class="social-list">
+
+                    <li title="Instagram" class="instagram">
+                        <a href="https://www.instagram.com/lucas.mds_/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li title="Email" class="email">
+                        <a href="mailto:lucasms.540@gmail.com?subject=Contate-me">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+
+                    <li title="Github" class="github">
+                        <a href="https://github.com/lucas-slv">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li title="Linkedin" class="linkedin">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+
+        <main class="container">
+
+            <div class="main-title">
+                <h1 class="title">Conheça os planetas do universo Star Wars</h1>
+                <div class="linha"></div>
+            </div>
+
+            <section class="page-content-info">
+                <div class="description">
+                    <p class="txt-description">
+                        O universo de Star Wars é vasto e repleto de sistemas planetários interconectados, cada um com seus próprios planetas, luas e asteroides. Esses sistemas muitas vezes possuem uma variedade de ambientes, desde desertos áridos até florestas exuberantes, cidades espaciais e paisagens geladas. As luas frequentemente orbitam os planetas principais, adicionando camadas adicionais de complexidade e histórias únicas.
+                        <br>
+                        <br>
+                        Asteroides e cinturões de asteroides também são uma parte integrante do universo de Star Wars. Muitas vezes, esses corpos celestes são usados como esconderijos, bases secretas ou locais para batalhas espaciais emocionantes. Além disso, planetas icônicos como Tatooine, Endor e Coruscant são apenas alguns exemplos dos diversos mundos que compõem o rico cenário galáctico de Star Wars.
+                    </p>
+                </div>
+
+                <aside class="warning-load-api">
+                    <h4 class="title-warning">Aviso:</h4>
+                    <p class="warning">informações sobre os planetas (nomes e informações no modal) podem demorar alguns segundos para carregar devido a API utlizada nestá página. Alguns dos motivos são:
+                        <br>
+                        <em>- A performance do servidor que hospeda a API.</em>
+                        <br>
+                        <em>- Também pode depender da latência da rede.</em>
+                        <br>
+                        <em>- A API ter muitas páginas para armazenar todos os dados de informações sobre personagens, planetas, naves espaciais e etc.</em>
+                        <br>
+                        Isso pode afetar o tempo de resposta dos dados esperados da API para carregar na página, causando lentidão no carregamento das informações sobre os planetas
+                    </p>
+                </aside>
+            </section>
+
+            <div class="linha"></div>
+
+            <section class="swiper mySwiper">
+                <div class="swiper-wrapper slide-content" id="content">
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/1-tatooine.png">
+                        <div class="card-content c1">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/2-alderaan.png">
+                        <div class="card-content c2">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/3-yavin-IV.png">
+                        <div class="card-content c3">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/4-hoth.png">
+                        <div class="card-content c4">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/5-dagobah.png">
+                        <div class="card-content c5">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/6-bespin.png">
+                        <div class="card-content c6">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/7-endor.png">
+                        <div class="card-content c7">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/8-naboo.png">
+                        <div class="card-content c8">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/9-coruscant.png">
+                        <div class="card-content c9">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/10-kamino.png">
+                        <div class="card-content c10">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/11-geonosis.png">
+                        <div class="card-content c11">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/12-utapau.png">
+                        <div class="card-content c12">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/13-mustafar.png">
+                        <div class="card-content c13">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/14-kashyyyik.png">
+                        <div class="card-content c14">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/15-polis-massa.jpg">
+                        <div class="card-content c15">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/16-migeeto.png">
+                        <div class="card-content c16">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/17-felucia.png">
+                        <div class="card-content c17">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/18-cato-neimoidia.png">
+                        <div class="card-content c18">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/19-saleucami.png">
+                        <div class="card-content c19">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/20-stewjon.png">
+                        <div class="card-content c20">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/21-eriadu.png">
+                        <div class="card-content c21">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/22-corellia.png">
+                        <div class="card-content c22">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/23-rodia.png">
+                        <div class="card-content c23">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/24-nal-hutta.png">
+                        <div class="card-content c24">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/25-dantooine.jpg">
+                        <div class="card-content c25">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/26-Bestine.png">
+                        <div class="card-content c26">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/27-Ord_Mantel.png">
+                        <div class="card-content c27">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/28-unknown.jpg">
+                        <div class="card-content c28">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/29-Trandosha.png">
+                        <div class="card-content c29">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/30-socorro.png">
+                        <div class="card-content c30">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/31-mon-cala.png">
+                        <div class="card-content c31">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/32-Chandrila.png">
+                        <div class="card-content c32">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/33-Sullust.png">
+                        <div class="card-content c33">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/34-Toydaria.png">
+                        <div class="card-content c34">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/35-Malastare.png">
+                        <div class="card-content c35">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/36-Dathomir.png">
+                        <div class="card-content c36">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/37-Ryloth.png">
+                        <div class="card-content c37">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/38-AleenMinor.png">
+                        <div class="card-content c38">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/39-Vulpter.png">
+                        <div class="card-content c39">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/40-Troiken.jpg">
+                        <div class="card-content c40">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/41-Tund.png">
+                        <div class="card-content c41">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/42-HaruunKal.png">
+                        <div class="card-content c42">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/43-Cerea.png">
+                        <div class="card-content c43">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/44-Glee_Anselm.png">
+                        <div class="card-content c44">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/45-Iridonia.png">
+                        <div class="card-content c45">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/46-tholoth.png">
+                        <div class="card-content c46">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/47-Iktotch.png">
+                        <div class="card-content c47">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/48-Quermia.png">
+                        <div class="card-content c48">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/49-Dorin.png">
+                        <div class="card-content c49">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/50-Champala.png">
+                        <div class="card-content c50">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/51-Mirial.png">
+                        <div class="card-content c51">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/52-Serenno.png">
+                        <div class="card-content c52">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/53-concord-dawn.jpg">
+                        <div class="card-content c53">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/54-Zolan.png">
+                        <div class="card-content c54">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/55-Ojom.png">
+                        <div class="card-content c55">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/56-Skako.png">
+                        <div class="card-content c56">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/57-Muunilinst.png">
+                        <div class="card-content c57">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/58-shili.png">
+                        <div class="card-content c58">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/59-Kalee.png">
+                        <div class="card-content c59">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-image-url="./planets/images-planets/60-Umbara.png">
+                        <div class="card-content c60">
+                            <div class="planet-name-bg">
+                                <span class="planet-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div title="Próximo" class="swiper-button-next swiper-navBtn" id="next"></div>
+                <div title="Anterior" class="swiper-button-prev swiper-navBtn" id="prev"></div>
+            </section>
+
+            <div class="modal" id="modal">
+                <i class="close-modal-mobile fa-solid fa-x" id="x-modal-mobile"></i>
+                <div class="modal-content" id="modal-content"></div>
+                <div id="loading"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-media-footer">
+                <ul class="social-list">
+
+                    <li title="Instagram" class="instagram">
+                        <a href="https://www.instagram.com/lucas.mds_/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Email" class="email">
+                        <a href="mailto:lucasms.540@gmail.com?subject=Contate-me" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Github" class="github">
+                        <a href="https://github.com/lucas-slv" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Linkedin" class="linkedin">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <p class="footer-logo">Star Wars - Planets</p>
+            <p class="copyright">Desenvolvido por: &copy; Lucas Mendes</p>
+        </footer>
+
+        <!-- Swiper JS -->
+        <script src="swiper-js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
+        <!-- JavaScrpit -->
+        <script src="planets/js/planets.js"></script>
+        <script src="planets/js/swiper-grid-planets.js"></script>
+    </body>
+</html>

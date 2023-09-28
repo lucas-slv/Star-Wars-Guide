@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="./assets/images/android-chrome-192x192.png" type="image/x-icon">
+
+        <!-- Icons font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="assets/public/reset.css">
+        <link rel="stylesheet" href="assets/public/header.css">
+        <link rel="stylesheet" href="starships/css/starships.css">
+        <link rel="stylesheet" href="starships/css/images-starships-cards.css">
+        <link rel="stylesheet" href="assets/public/footer.css">
+        <link rel="stylesheet" href="starships/css/starships-responsive.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="swiper-css/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css">
+
+        <title>Star Wars - Starships</title>
+    </head>
+    <body>
+        
+        <header class="cabecalho">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="img-logo" src="assets/images/logo-starwars.png" alt="logo starwars">
+                </a>
+                <span class="txt-logo">Starships</span>
+            </div>
+
+            <nav class="navigation-menu">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a title="Personagens" href="characters.html">Characters</a>
+                    </li>
+                    <li>
+                        <a title="Planetas" href="planets.html">Planets</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <ul class="social-list">
+
+                    <li title="Instagram" class="instagram">
+                        <a href="https://www.instagram.com/lucas.mds_/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li title="Email" class="email">
+                        <a href="mailto:lucasms.540@gmail.com?subject=Contate-me" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+
+                    <li title="Github" class="github">
+                        <a href="https://github.com/lucas-slv" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li title="Linkedin" class="linkedin">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <div class="main-title">
+                <h1 class="title">Conheça as naves espaciais de star wars</h1>
+                <div class="linha"></div>
+            </div>
+
+            <section class="page-info-content">
+                <div class="description">
+                    <p class="txt">
+                        As "starships" (naves espaciais) no universo Star Wars são uma coleção fascinante e diversificada de veículos projetados para viagens interplanetárias. Elas vêm em todas as formas e tamanhos, cada uma com seu próprio propósito e características únicas. Desde as icônicas naves da Aliança Rebelde, como a <em>Millennium Falcon</em>, até as imponentes naves do Império Galáctico, como o <em>Star Destroyer</em>, e as ágeis e misteriosas naves dos contrabandistas, como o <em>Slave I de Boba Fett</em>, a variedade de naves espaciais é impressionante.
+                        <br>
+                        <br>
+                        Algumas são projetadas para batalha, com armas poderosas e blindagem resistente, enquanto outras são ideais para transporte de carga, contrabando ou exploração. As naves também variam em termos de velocidade, alcance e capacidade de carga, atendendo às necessidades específicas das diferentes espécies e organizações da galáxia.
+                    </p>
+                </div>
+
+                <aside class="warning-load-api">
+                    <h4 class="title-warning">Aviso:</h4>
+                    <p class="txt-warning">
+                        informações sobre as Naves Espaciais (nomes e detalhes no modal) podem demorar alguns segundos para carregar devido a API utlizada nestá página. Alguns dos motivos são:
+                        <br>
+                        <em>- A performance do servidor que hospeda a API.</em>
+                        <br>
+                        <em>- A latência da rede.</em>
+                        <br>
+                        <em>- A API ter muitas páginas para armazenar todos os dados de informações sobre personagens, planetas, aeronaves e etc.</em>
+                        <br>
+                        Isso pode afetar o tempo de resposta dos dados esperados da API para carregar na página, causando lentidão no carregamento das informações sobre as "Starships".
+                    </p>
+                </aside>
+            </section>
+            
+            <div class="linha"></div>
+
+            <section class="swiper mySwiper">
+                <div class="swiper-wrapper slide-content" id="content">
+                    
+                    <div class="swiper-slide card" data-starship-id="2" data-image-url="./starships/starships-images/2-cr90.png">
+                        <div class="card-content c2">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="3" data-image-url="./starships/starships-images/3-star_destroyer.png">
+                        <div class="card-content c3">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="5" data-image-url="./starships/starships-images/5-sentinel.png">
+                        <div class="card-content c5">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="9" data-image-url="./starships/starships-images/9-death_star.png">
+                        <div class="card-content c9">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="10" data-image-url="./starships/starships-images/10-millennium.png">
+                        <div class="card-content c10">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="11" data-image-url="./starships/starships-images/11-Ywing.png">
+                        <div class="card-content c11">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="12" data-image-url="./starships/starships-images/12-Xwing.png">
+                        <div class="card-content c12">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="13" data-image-url="./starships/starships-images/13-tie.png">
+                        <div class="card-content c13">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="15" data-image-url="./starships/starships-images/15-executor.png">
+                        <div class="card-content c15">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="17" data-image-url="./starships/starships-images/17-rebel.png">
+                        <div class="card-content c17">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="21" data-image-url="./starships/starships-images/21-slave.png">
+                        <div class="card-content c21">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="22" data-image-url="./starships/starships-images/22-imperial.png">
+                        <div class="card-content c22">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="23" data-image-url="./starships/starships-images/23-ef76.png">
+                        <div class="card-content c23">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="27" data-image-url="./starships/starships-images/27-calamari.png">
+                        <div class="card-content c27">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="28" data-image-url="./starships/starships-images/28-Awing.png">
+                        <div class="card-content c28">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="29" data-image-url="./starships/starships-images/29-Bwing.png">
+                        <div class="card-content c29">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="31" data-image-url="./starships/starships-images/31-cruiser.png">
+                        <div class="card-content c31">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="32" data-image-url="./starships/starships-images/32-droid.png">
+                        <div class="card-content c32">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="39" data-image-url="./starships/starships-images/39-naboo.png">
+                        <div class="card-content c39">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="40" data-image-url="./starships/starships-images/40-naboo_royal.png">
+                        <div class="card-content c40">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="41" data-image-url="./starships/starships-images/41-scimitar.png">
+                        <div class="card-content c41">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="43" data-image-url="./starships/starships-images/43-j_type.png">
+                        <div class="card-content c43">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="47" data-image-url="./starships/starships-images/47-aa9.png">
+                        <div class="card-content c47">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="48" data-image-url="./starships/starships-images/48-jedi_star.png">
+                        <div class="card-content c48">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="49" data-image-url="./starships/starships-images/49-h_type.png">
+                        <div class="card-content c49">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="52" data-image-url="./starships/starships-images/52-republic.png">
+                        <div class="card-content c52">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="58" data-image-url="./starships/starships-images/58-solar.png">
+                        <div class="card-content c58">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="59" data-image-url="./starships/starships-images/59-trade.png">
+                        <div class="card-content c59">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="61" data-image-url="./starships/starships-images/61-theta.png">
+                        <div class="card-content c61">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="63" data-image-url="./starships/starships-images/63-republic_cruiser.png">
+                        <div class="card-content c63">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="64" data-image-url="./starships/starships-images/64-naboo_j.png">
+                        <div class="card-content c64">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="65" data-image-url="./starships/starships-images/65-jedi_interceptor.png">
+                        <div class="card-content c65">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="66" data-image-url="./starships/starships-images/66-arc170.png">
+                        <div class="card-content c66">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="68" data-image-url="./starships/starships-images/68-frigate.png">
+                        <div class="card-content c68">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide card" data-starship-id="74" data-image-url="./starships/starships-images/74-belbullab.png">
+                        <div class="card-content c74">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card" data-starship-id="75" data-image-url="./starships/starships-images/75-Vwing.png">
+                        <div class="card-content c75">
+                            <div class="starships-name-bg">
+                                <span class="starships-name"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div title="Próximo" class="swiper-button-next swiper-navBtn" id="next"></div>
+                <div title="Anterior" class="swiper-button-prev swiper-navBtn" id="prev"></div>
+            </section>
+
+            <div class="modal" id="modal">
+                <i class="close-modal-mobile fa-solid fa-x" id="x-modal-mobile"></i>
+                <div class="modal-content" id="modal-content"></div>
+                <div id="loading"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-media-footer">
+                <ul class="social-list">
+
+                    <li title="Instagram" class="instagram">
+                        <a href="https://www.instagram.com/lucas.mds_/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Email" class="email">
+                        <a href="mailto:lucasms.540@gmail.com?subject=Contate-me" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Github" class="github">
+                        <a href="https://github.com/lucas-slv" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Linkedin" class="linkedin">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <p class="footer-logo">Star Wars - Starships</p>
+            <p class="copyright">Desenvolvido por: &copy; Lucas Mendes</p>
+        </footer>
+
+        <!-- Swiper JS -->
+        <script src="swiper-js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
+        <!-- JavaScript -->
+        <script src="starships/js/swiper-grid-starships.js"></script>
+        <script src="starships/js/starships.js"></script>
+    </body>
+</html>

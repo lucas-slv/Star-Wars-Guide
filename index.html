@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="./assets/images/android-chrome-192x192.png" type="image/x-icon">
+
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="assets/public/reset.css">
+        <link rel="stylesheet" href="assets/public/header.css">
+        <link rel="stylesheet" href="index/css/index.css">
+        <link rel="stylesheet" href="assets/public/footer.css">
+        <link rel="stylesheet" href="index/css/responsive-index.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="swiper-css/cdn.jsdelivr.net_npm_swiper@8.1.6_swiper-bundle.min.css">
+        
+        <!-- Icons font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+        <title>Star Wars - Home</title>
+    </head>
+    <body>
+
+        <header class="cabecalho">
+            
+            <div class="logo">
+                <a href="index.html">
+                    <img class="img-logo" src="./assets/images/logo-starwars.png" alt="logo do starwars">
+                </a>
+                    
+                <span class="txt-logo">Home</span>                
+            </div>
+            
+            <nav class="navigation-menu">
+                <ul class="menu">
+                    <li><a title="Personagens" href="characters.html">Characters</a></li>
+                    <li><a title="Planetas" href="planets.html">Planets</a></li>
+                    <li><a title="Naves Espaciais" href="starships.html">Starships</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <ul class="social-list">
+
+                    <li title="Instagram" class="instagram">
+                        <a href="https://www.instagram.com/lucas.mds_/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Email" class="email">
+                        <a href="mailto:lucasms.540@gmail.com?subject=Contate-me" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Github" class="github">
+                        <a href="https://github.com/lucas-slv" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Linkedin" class="linkedin">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+
+        <main class="container">
+            
+            <div class="main-title">
+                <h1 class="title">Conheça tudo sobre o universo de Star Wars</h1>
+                <div class="linha"></div>
+            </div>
+
+            <section class="page-info">
+                <div class="movie-info">
+                    <p class="movie-description">
+                        "Star Wars" é uma icônica franquia de ficção científica criada por George Lucas. A saga começou em 1977 com o lançamento do filme <br><span class="trilogia-films">"Star Wars: Episode IV - A New Hope"</span> (no Brasil, "Star Wars: Episódio IV - Uma Nova Esperança").<br> Desde então, a franquia expandiu-se para incluir múltiplos filmes, séries de TV, livros, quadrinhos, jogos de vídeo game e uma ampla gama de produtos relacionados.
+                        <br>
+                        <br>
+                        A história de "Star Wars" se passa em uma galáxia fictícia muito distante, onde uma mistura de humanos, alienígenas, droids e criaturas exóticas coexistem em uma época de conflitos intergalácticos. A trama gira em torno do conflito entre os Jedi e os Sith, duas ordens de usuários da Força, uma energia mística que concede habilidades especiais. Os Jedi buscam manter a paz e a justiça, enquanto os Sith desejam poder e dominação.
+                        <br>
+                        <br>
+                        A saga é dividida em três trilogias principais:
+                        <br>
+                        <br>
+                        <span class="trilogia-films">Trilogia Original:</span>
+                        <br>
+                        <br>
+                        Episódio IV: "A New Hope" (1977)
+                        <br>
+                        Episódio V: "The Empire Strikes Back" (1980)
+                        <br>
+                        Episódio VI: "Return of the Jedi" (1983)
+                        <br>
+                        <br>
+                        <span class="trilogia-films">Trilogia Prequel:</span>
+                        <br>
+                        <br>
+                        Episódio I: "The Phantom Menace" (1999)
+                        <br>
+                        Episódio II: "Attack of the Clones" (2002)
+                        <br>
+                        Episódio III: "Revenge of the Sith" (2005)
+                        <br>
+                        <br>
+                        <span class="trilogia-films">Trilogia Sequela:</span>
+                        <br>
+                        <br>
+                        Episódio VII: "The Force Awakens" (2015)
+                        <br>
+                        Episódio VIII: "The Last Jedi" (2017)
+                        <br>
+                        Episódio IX: "The Rise of Skywalker" (2019)
+                    </p>
+                </div>
+
+                <aside class="api-info">
+                    <p class="api-description">
+                        Nesta página foi usada uma API pública de Star Wars para requisitar e obter todas as informações sobre a franquia de filmes Star Wars.
+                        <br>
+                        <br>
+                        <span class="content-api">
+                            A API de Star Wars, ou "swapi" (Swah-pee) é a primeira fonte de dados quantificada e acessível por meio de programação para todos os dados do universo canônico de Star Wars!
+                            <br>
+                            Pegamos todo o material contextual rico do universo e formatamos em algo mais fácil de consumir com software. Então colocamos uma API na frente para que você possa acessar tudo!
+                        </span> 
+                        <br>
+                        <br>
+                        Para acessar o site da API clique no botão abaixo e aproveite para utilizá-la quando quiser!
+                    </p>
+
+                    <a href="https://swapi.dev/" class="btn-api" target="_blank">StarWars API</a>
+                </aside>
+            </section>
+
+            <div class="secondary-title">
+                <h2 class="title">Veja toda a franquia de filmes Star Wars</h2>
+                <div class="linha"></div>
+            </div>
+
+            <section class="slide-container swiper">
+
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme1.jpeg" alt="ep 1" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    A Ameaça Fantasma - Ep I
+                                </h2>
+                                <p class="description">
+                                    Este filme segue o jovem Anakin Skywalker, um escravo com um talento excepcional para a Força. O Jedi Qui-Gon Jinn percebe seu potencial e o leva para se tornar um Jedi, enquanto enfrentam a ascensão do misterioso Darth Sidious e sua criação, Darth Maul.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_I:_A_Amea%C3%A7a_Fantasma" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme2.jpeg" alt="star wars II" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    Ataque dos clones - Ep II
+                                </h2>
+                                <p class="description">
+                                    Dez anos após os eventos do primeiro filme, Anakin Skywalker agora é um aprendiz Jedi. Enquanto o conflito entre a República e a Federação do Comércio aumenta, Anakin e a senadora Padmé Amidala são arrastados para um conflito galáctico, revelando os primeiros sinais da Guerra dos Clones.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_II:_Ataque_dos_Clones" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme3.jpeg" alt="ep 2" class="card-img">
+                                </div>
+                            </div>
+                            
+                            <div class="card-content">
+                                <h2 class="name">
+                                    A vingaça dos Sith - Ep III
+                                </h2>
+                                <p class="description">
+                                    Este filme testemunha a queda de Anakin Skywalker para o lado sombrio da Força, transformando-se em Darth Vader. A República é transformada no Império Galáctico, e a Ordem Jedi é quase erradicada. A ascensão do Imperador Palpatine e a traição dos Jedi são o foco principal.
+                                </p>
+                                
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_III:_A_Vingan%C3%A7a_dos_Sith" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme-han-solo.jpeg" alt="han solo" class="card-img">
+                                </div>
+                            </div>
+                            
+                            <div class="card-content">
+                                <h2 class="name">
+                                    Han Solo - Uma história star wars
+                                </h2>
+                                <p class="description">
+                                    O filme conta a história de como Han Solo se tornou um contrabandista habilidoso, mostrando sua jornada desde um órfão até sua parceria com Chewbacca e a obtenção da Millennium Falcon. A trama é repleta de ação, reviravoltas e referências familiares da franquia "Star Wars".
+                                </p>
+                                
+                                <a href="https://starwars.fandom.com/pt/wiki/Han_Solo:_Uma_Hist%C3%B3ria_Star_Wars?so=search" target="_blank"  class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme-rogue-one.jpeg" alt="rogue one" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    Rogue one - Uma história Star Wars
+                                </h2>
+                                <p class="description">
+                                    "Rogue One" segue um grupo de rebeldes que se unem para roubar os planos da Estrela da Morte, uma superarma do Império. O filme se concentra na coragem desses personagens em uma missão perigosa que tem como objetivo trazer esperança para a galáxia.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Rogue_One:_Uma_Hist%C3%B3ria_Star_Wars?so=search" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme4.jpeg" alt="ep VI" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    Uma nova esperança - Ep IV
+                                </h2>
+                                <p class="description">
+                                    Com o Império no controle, a Princesa Leia envia uma mensagem para um Jedi renegado, Luke Skywalker. Junto com Han Solo, Chewbacca e outros aliados, eles tentam destruir a Estrela da Morte e restaurar a liberdade à galáxia.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_IV:_Uma_Nova_Esperan%C3%A7a?so=search" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme5.jpeg" alt="ep V" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    O império contra-ataca - Ep V
+                                </h2>
+                                <p class="description">
+                                    O Império contra-ataca após a destruição da Estrela da Morte, forçando os rebeldes a se retirarem. Luke busca treinamento Jedi com Yoda enquanto Han Solo é capturado. O filme culmina em um confronto emocionante entre Luke e Darth Vader.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_V:_O_Imp%C3%A9rio_Contra-Ataca?so=search" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme6.jpeg" alt="ep VI" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    O retorno de jedi - Ep VI
+                                </h2>
+                                <p class="description">
+                                    "Star Wars: O Retorno de Jedi" encerra a trilogia original com a Aliança Rebelde tentando destruir a segunda Estrela da Morte e derrotar o Império. Luke Skywalker enfrenta o Imperador Palpatine e busca redimir seu pai, Darth Vader.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_VI:_O_Retorno_de_Jedi?so=search" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme7.jpeg" alt="ep XII" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    O despertar da força - Ep VII
+                                </h2>
+                                <p class="description">
+                                    Décadas após a queda do Império, a Primeira Ordem surge, e a Resistência luta contra ela. Uma nova protagonista, Rey, descobre sua conexão com a Força e se junta a Finn, Poe e Han Solo para enfrentar Kylo Ren e encontrar Luke Skywalker.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_VII:_O_Despertar_da_For%C3%A7a?so=search" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme8.jpeg" alt="ep XII" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    Os últimos jedi - Ep VIII
+                                </h2>
+                                <p class="description">
+                                    Continua a saga com a Resistência em fuga e Rey procurando treinamento de Luke. O filme explora temas de fracasso, renovação e dualidade da Força. Desafios testam Leia e Kylo Ren, com revelações impactantes. Dividindo fãs, prepara o terreno para o desfecho da trilogia.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_VIII:_Os_%C3%9Altimos_Jedi" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="index/images-filmes/filme9.jpeg" alt="star wars IX" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">
+                                    A ascensão de Skywalker - Ep IX
+                                </h2>
+                                <p class="description">
+                                    A conclusão da saga Skywalker vê a Resistência enfrentando a Primeira Ordem em um confronto final. Rey descobre sua verdadeira linhagem, enquanto personagens antigos e novos se unem para acabar com o reinado de Palpatine de uma vez por todas.
+                                </p>
+        
+                                <a href="https://starwars.fandom.com/pt/wiki/Star_Wars_Epis%C3%B3dio_IX:_A_Ascens%C3%A3o_Skywalker" target="_blank" class="button">Ver mais</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        
+                <div title="Próximo" class="swiper-button-next" id="swiper-navBtn"></div>
+                <div title="Anterior" class="swiper-button-prev" id="swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+
+            </section>
+        </main>
+
+        <footer>
+            
+            <div class="social-media-footer">
+                <ul class="social-list">
+
+                    <li title="Instagram" class="instagram">
+                        <a href="https://www.instagram.com/lucas.mds_/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Email" class="email">
+                        <a href="mailto:lucasms.540@gmail.com?subject=Contate-me" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Github" class="github">
+                        <a href="https://github.com/lucas-slv" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li title="Linkedin" class="linkedin">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <p class="footer-logo">Star Wars - Home</p>
+            <p class="copyright">Desenvolvido por: &copy; Lucas Mendes</p>
+        </footer>
+
+        
+        <!-- Swiper JS -->
+    <script src="swiper-js/cdn.jsdelivr.net_npm_swiper@8.1.6_swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="index/js/home-slide.js"></script>
+    </body>
+</html>

@@ -1,0 +1,359 @@
+@media screen and (max-width: 1280px) {
+  
+  .page-info-content > .warning-load-api {
+    width: 30%;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    background-size: cover;
+  }
+  
+  .cabecalho {
+    justify-content: space-between;
+  }
+
+  .cabecalho > .logo {
+    width: 40%;
+  }
+
+  .cabecalho > .navigation-menu {
+    width: 60%;
+  }
+
+  .cabecalho > .social-media {
+    display: none;
+  }
+
+  .social-media-footer {
+    display: flex;
+  }
+
+  .social-media-footer > .social-list > li {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-media-footer > .social-list > li i {
+    font-size: 2rem;
+  }
+
+  .linha {
+    width: 95%;
+  }
+
+  .page-info-content {
+    flex-direction: column;
+  }
+
+  .page-info-content > .description {
+    width: 60%;
+  }
+
+  .page-info-content > .warning-load-api {
+    width: 40%;
+  }
+
+  .modal-content {
+    width: 35vw;
+  }
+
+  .modal-content > .starship-image {
+    transition: none;
+    transform: scale(1);
+    filter: grayscale(0);
+    cursor: default;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .cabecalho > .navigation-menu .menu li a::after {
+    display: none;
+  }
+
+  .page-info-content {
+    gap: 20px;
+  }
+
+  .page-info-content > .description {
+    width: 70%;
+  }
+
+  .page-info-content > .warning-load-api {
+    width: 45%;
+  }
+
+  .modal-content {
+    width: 50vw;
+    height: 55vh;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-size: cover;
+  }
+
+  .main-title {
+    height: 5rem;
+  }
+
+  .main-title > .title {
+    line-height: 30px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .cabecalho > .logo {
+    width: 100%;
+  }
+
+  .cabecalho > .logo .txt-logo {
+    color: #FFD700;
+    text-shadow: 1px 1px 2px #fff;
+    font-size: 1.1rem;
+  }
+
+  .cabecalho > .navigation-menu {
+    width: 100%;
+  }
+
+  .cabecalho > .navigation-menu .menu li a {
+    font-size: 1.2rem;
+  }
+
+  .page-info-content {
+    gap: 40px;
+  }
+
+  .page-info-content > .description {
+    width: 80%;
+    height: 44rem;
+  }
+
+  .page-info-content > .warning-load-api {
+    width: 70%;
+    box-shadow: 0 0 10px rgba(100, 0, 0, 0.5);
+    background-color: rgba(100, 0, 0, 0.100);
+  }
+
+  .page-info-content > .warning-load-api .title-warning {
+    font-size: 1.3rem;
+  }
+
+  .page-info-content > .warning-load-api .txt-warning {
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+
+  .swiper {
+    padding: 40px 0 !important;
+  }
+
+  .swiper > .slide-content .swiper-slide{
+    height: calc((70% - 100px) / 2) !important;
+  }
+
+  .swiper-navBtn {
+    display: none !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 13px !important;
+    height: 13px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  
+  .page-info-content > .description {
+    width: 90%;
+    height: 48rem;
+  }
+
+  .page-info-content > .warning-load-api {
+    width: 80%;
+  }
+
+  .modal-content {
+    width: 65vw;
+    height: 60vh;
+  }
+
+  .social-media-footer {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  
+  .cabecalho {
+    height: 250px;
+    justify-content: space-between;
+  }
+
+  .cabecalho > .logo {
+    height: 30%;
+  }
+
+  .cabecalho > .logo .img-logo {
+    width: 130px;
+  }
+
+  .cabecalho > .navigation-menu {
+    height: 60%;
+  }
+
+  .cabecalho > .navigation-menu .menu {
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .cabecalho > .navigation-menu .menu li {
+    width: 100%;
+  }
+
+  .cabecalho > .navigation-menu .menu li a {
+    background-color: #FFD700;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    padding: 5px 8px;
+    color: #000;
+  }
+
+  .main-title {
+    height: 7rem;
+  }
+
+  .page-info-content > .description {
+    width: 100%;
+  }
+
+  .page-info-content > .description .txt {
+    line-height: normal;
+  }
+
+  .page-info-content > .warning-load-api {
+    width: 100%;
+  }
+
+  .page-info-content > .warning-load-api .txt-warning {
+    line-height: normal;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .starships-name {
+    font-size: .9rem;
+  }
+
+  .modal.active > .close-modal-mobile {
+    visibility: visible;
+    top: 13%;
+  }
+
+  .modal > .modal-content {
+    height: 75vh;
+    width: 80vw;
+    justify-content: space-evenly;
+    row-gap: 5px;
+  }
+
+  .modal-content > .starship-image {
+    height: 150px;
+    width: 200px;
+  }
+
+  .social-media-footer {
+    width: 70%;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  
+  .page-info-content > .description {
+    height: 60rem;
+  }
+
+  .page-info-content > .description .txt {
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .swiper > .slide-content .card {
+    width: 100% !important;
+  }
+
+  .starships-name {
+    font-size: 1rem;
+  }
+
+  .modal > .modal-content {
+    height: 90vh;
+    width: 90vw;
+    padding: 20px 0;
+  }
+
+  .modal.active > .close-modal-mobile {
+    top: 5%;
+  }
+
+  .social-media-footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  
+  .cabecalho > .logo .img-logo {
+    width: 100px;
+  }
+
+  .cabecalho > .logo .txt-logo {
+    font-size: .9rem;
+  }
+
+  .main-title {
+    height: 8rem;
+  }
+
+  .main-title > .title {
+    line-height: normal;
+  }
+
+  .page-info-content > .description {
+    height: 65rem;
+  }
+
+  .page-info-content > .warning-load-api .txt-warning {
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  .starships-name {
+    font-size: .8rem;
+  }
+
+}
